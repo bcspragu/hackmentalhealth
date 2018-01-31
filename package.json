@@ -1,0 +1,18 @@
+{
+  "name": "HackMentalHealth",
+  "version": "0.0.1",
+  "description": "HackMentalHealth coding workshop starter template - https://www.hackmentalhealth.care/coding-workshops",
+  "main": "index.js",
+  "repository": "https://github.com/bcspragu/hackmentalhealth.git",
+  "author": "Brandon Sprague",
+  "license": "MIT",
+  "dependencies": {
+    "apiai": "^4.0.3",
+    "dotenv": "^5.0.0",
+    "express": "^4.16.2",
+    "uuid": "^3.2.1",
+    "ws": "^4.0.0"
+  },
+  "devDependencies": {
+  }
+}
