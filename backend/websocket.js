@@ -11,7 +11,7 @@ wss.on('connection', (ws) => {
       .then(answer => ws.send(JSON.stringify({type: 'bot', msg: answer})));
   });
 
-  wd.send(JSON.stringify({type: 'sessionId', msg: uuidv4()}));
+  ws.send(JSON.stringify({type: 'sessionId', msg: uuidv4()}));
 });
 
 module.exports = wss;
