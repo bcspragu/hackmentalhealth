@@ -1,4 +1,5 @@
 #!/bin/sh
+set -e
 
 # Go into the frontend directory and build a compiled version of our site.
 cd /project/frontend

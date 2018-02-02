@@ -8,4 +8,4 @@ docker run \
   -u $(id -u):$(id -g) \
   --mount type=bind,source=$DIR,destination=/project \
   --rm \
-  hmh-env /bin/sh
+  hmh-env /project/shell-wrapper.sh

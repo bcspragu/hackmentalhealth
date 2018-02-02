@@ -1,9 +1,9 @@
 #!/bin/bash
-# setup-environment.sh handles watching the files in the frontend
-# directory, and rebuilding them when they change. The compiled files are built
-# to frontend/dist. To serve those files, run the backend with the
-# ./docker-run-server.sh script.
+# build-docker-container.sh builds the Dockerfile in this directory, and then
+# runs a setup script. The Docker image comes with NodeJS, NPM, Yarn, Git, and
+# the Heroku command-line tool. The setup script downloads all dependencies 
 set -e
+
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 docker build -t hmh-env $DIR

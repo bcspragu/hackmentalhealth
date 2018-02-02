@@ -2,9 +2,3 @@
 *.env
 node_modules/
 .netrc
-.ash_history
-.cache/
-.config/
-.local/
-.npm/
-.yarnrc
