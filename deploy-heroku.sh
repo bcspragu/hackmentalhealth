@@ -8,8 +8,8 @@ cd /project
 
 git checkout -b release
 git add -f frontend/dist/
-git config user.name 'Heroku'
-git config user.email '<>'
+git config --global user.name 'Heroku'
+git config --global user.email '<>'
 git commit -m "AUTOMATED PUSH TO HEROKU"
 
 # Update Heroku's configuration to include the latest variables from our prod
@@ -17,6 +17,7 @@ git commit -m "AUTOMATED PUSH TO HEROKU"
 sed 's/#[^("|'')]*$//;s/^#.*$//' prod.env | xargs heroku config:set
 
 # Deploy to Heroku.
-git push heroku release:master
+git push --force heroku release:master
 git checkout master
 git branch -D release
+rm .gitconfig
