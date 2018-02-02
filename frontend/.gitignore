@@ -4,7 +4,8 @@
 # prod environment configuration
 /src/environments/environment.prod.ts
 
-# compiled output, except /dist
+# compiled output
+/dist
 /dist-server
 /tmp
 /out-tsc
