@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "HackMentalHealth coding workshop starter template - https://www.hackmentalhealth.care/coding-workshops",
   "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
   "repository": "https://github.com/bcspragu/hackmentalhealth.git",
   "author": "Brandon Sprague",
   "license": "MIT",

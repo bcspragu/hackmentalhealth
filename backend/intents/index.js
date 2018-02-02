@@ -20,7 +20,7 @@ const doIntent = (response) => {
   const {parameters, action, fulfillment } = response.result;
 
   return new Promise((resolve, reject) => {
-    if (intents[action]) {
+    if (intents[action] && hasAllParameters(parameters)) {
       return resolve(intents[action](parameters));
     } else if (fulfillment.speech) {
       return resolve(fulfillment.speech);
@@ -29,6 +29,10 @@ const doIntent = (response) => {
     // parameters, the world is your oyster!
     return reject(handleUnknownAnswer());
   });
+};
+
+const hasAllParameters = (params) => {
+  return params.modifier && params.word;
 };
 
 const handleUnknownAnswer = () => {
