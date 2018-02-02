@@ -2,8 +2,8 @@ const apiai = require('apiai')(process.env.APIAI_CLIENT_TOKEN);
 const uuidv4 = require('uuid/v4');
 
 // include and merge all intents:
-const color = require('./color');
-const intents = Object.assign({}, color);
+const words = require('./words');
+const intents = Object.assign({}, words);
 
 // This is where we call out to DialogFlow (API.ai) with our text to get an
 // intent.
@@ -18,13 +18,10 @@ const callApiAi = (text, sessionId) => new Promise((resolve, reject) => {
 // This is where we decide what we do with the response we get from API.ai.
 const doIntent = (response) => {
   const {parameters, action, fulfillment } = response.result;
-  const color = parameters.color;
-  const attr = parameters['page-attribute'];
 
-  console.info(parameters, action, fulfillment);
   return new Promise((resolve, reject) => {
-    if (intents[action] && color && attr) {
-      return resolve(intents[action]({color: color, attr: attr}));
+    if (intents[action]) {
+      return resolve(intents[action](parameters));
     } else if (fulfillment.speech) {
       return resolve(fulfillment.speech);
     }

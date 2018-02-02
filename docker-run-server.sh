@@ -14,4 +14,4 @@ docker run \
   -u $(id -u):$(id -g) \
   --mount type=bind,source=$DIR,destination=/project \
   --rm \
-  hmh-env node index.js
+  hmh-env yarn exec nodemon index.js

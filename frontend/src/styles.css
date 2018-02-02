@@ -33,10 +33,11 @@ body {
   width: auto;
   line-height: 18px;
   align-self: flex-end;
+  font-weight: bold;
 }
 
 .msgs li.bot {
-  background: #6666fe;
+  background: #080808;
   color: #fff;
   align-self: flex-start;
 }

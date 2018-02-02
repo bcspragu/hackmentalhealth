@@ -72,7 +72,6 @@ export class AppComponent implements OnInit, OnDestroy {
   }
 
   private pushMsg(msg: Object, clearUserMsg: boolean = false) {
-    console.log(msg);
     this.msgs.push(msg);
     this.botIsTyping = false;
     this.scrollChatToBottom();
