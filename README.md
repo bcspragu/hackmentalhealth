@@ -50,10 +50,10 @@ custom responses based on the chat messages we receive.
    an account. Click the "[Sign in with
    Google](https://console.dialogflow.com/api-client/#/login)" button to get
    started.
-  * Note: It may require you to do some configuring, like setting up a billing
-    account, if you've never used Google Cloud before. Don't worry, it won't
-    charge you for anything, the chatbot will be free for everything we do in
-    this workshop.
+     * Note: It may require you to do some configuring, like setting up a billing
+       account, if you've never used Google Cloud before. Don't worry, it won't
+       charge you for anything, the chatbot will be free for everything we do in
+       this workshop.
 1. On the left-hand side, select "Create new agent", this is where we'll
    make our chatbot.
 1. Give your agent a name at the top where it says "Agent name", and leave
