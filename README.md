@@ -63,6 +63,9 @@ custom responses based on the chat messages we receive.
    side next to your bot's name.
 1. Look near the bottom for a section called "Client access token", and
    record that token somewhere, you'll need it later.
+1. If you want your bot to respond to things like "Hello" and "How are you
+   doing today?", select "Small talk" from the left-hand side, select "Enable",
+   and then hit "Save".
 
 #### Heroku
 
@@ -117,17 +120,23 @@ to the "Running the Project" section and see if your setup is working.
 
 #### Method #2: Direct Installation
 
-  * Two options:
-    * Install Docker
-    * Install npm, yarn, git, and heroku cli
-  * Docker instructions:
-
+TODO(bcspragu): Complete this section, include instructions for installing
+NodeJS/NPM, Yarn, Git, and the Heroku command-line tool.
 
 ### Running the Project
-1. Open a terminal in the project directory and run `./docker-run-server.sh` and
-   ./docker-build-frontend-dev.sh
-1. In your web browser, navigate to http://localhost:8080. You should see a
-   greeting from SampleBot.
+1. Open a terminal in the project directory and run `./docker-run-server.sh`
+    * This will run the backend server, which handles talking to DialogFlow for
+      getting chatbot responses. It also handles the real-time communication
+      with the browser via WebSockets. Additionally, it will restart the server
+      every time it detects changes to server files.
+1. Open another terminal in the project directory and run
+   `./docker-build-frontend-dev.sh`
+    * This will build static HTML, CSS, and JavaScript files from the `src/`
+      directory, and place them into the `dist/` directory. It will also watch
+      for changes to the files and rebuild the files when it detects changes.
+1. Once both commands are running, navigate to http://localhost:8080 in your
+   web browser. You should see a greeting from SampleBot. Say "Hi!" and see how
+   he responds.
 
 ### Deploying the Project
 
