@@ -12,3 +12,7 @@ on the page.
 
 This is still very much a work in progress, and more instructions will be added
 in the next few days.
+
+## Pre-Work
+
+# Setting up your environment

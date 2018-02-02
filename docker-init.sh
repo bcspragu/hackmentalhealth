@@ -4,4 +4,5 @@ yarn
 cd /project/frontend
 npm install
 cd /project
-HOME=/project heroku login
+heroku login
+rm -rf .ash_history .cache/ .config/ .local/ .npm/ .yarnrc
