@@ -104,7 +104,15 @@ check in with me before the workshops the day of.
 
 #### Method #1: Using Docker
 
-1. From inside the project directory, run `./build-docker-container.sh`
+1. If you already have Docker installed, you can skip this step. If you don't
+   have Docker installed, Docker has [installation
+   instructions](https://docs.docker.com/install/) for all common platforms,
+   including [Windows](https://docs.docker.com/docker-for-windows/install/),
+   [Mac](https://docs.docker.com/docker-for-mac/install/), and
+   [Ubuntu](https://docs.docker.com/install/linux/docker-ce/ubuntu/). Install
+   the 'Stable channel' version of 'Docker CE'.
+1. Once Docker is installed, go into the project directory and run
+   `./build-docker-container.sh`
     * This will use the Dockerfile in this directory to make an image
       containing all the tools we need, like NodeJS, NPM, Yarn, Git, and the
       Heroku command-line tool. It will then run a setup script that installs
