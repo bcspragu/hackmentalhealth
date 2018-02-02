@@ -90,21 +90,29 @@ instead of using containers, there are directions for that too.
 
 #### Downloading the Code
 
-The code you need to run the project is stored in this repository. If you have
-Git installed, you can download this repository by running `git clone
-https://github.com/bcspragu/hackmentalhealth.git`. If you don't have Git
-installed, you can [download a ZIP
-file](https://github.com/bcspragu/hackmentalhealth/archive/master.zip) instead.
-Now, open the directory you just downloaded in your terminal application.
+The code you need to run the project is stored in this repository. You can
+[download a ZIP
+file](https://github.com/bcspragu/hackmentalhealth/archive/master.zip), or run
+`git clone https://github.com/bcspragu/hackmentalhealth.git` in your terminal
+if you have Git installed. Once downloaded, open the directory in a terminal.
+If you're unfamiliar with the terminal, ask for help in the [Slack channel
+for the workshop](https://hackmentalhealth.slack.com/messages/C925ATDPG/), or
+check in with me before the workshops the day of.
 
 #### Method #1: Using Docker
 
-1. cd HackMentalHealth
-1. ./build-docker-container.sh
-1. It will prompt you for your Heroku credentials, enter them
-1. Copy the 'dev.env.example' file to 'dev.env', and replace
-   'INSERT_YOUR_TOKEN_HERE' with your "Client access token" from
-   DialogFlow.
+1. From inside the project directory, run `./build-docker-container.sh`
+    * This will use the Dockerfile in this directory to make an image
+      containing all the tools we need, like NodeJS, NPM, Yarn, Git, and the
+      Heroku command-line tool. It will then run a setup script that installs
+      the frontend and backend dependencies, and logs you into your new Heroku
+      account.
+1. Enter your Heroku credentials when prompted.
+1. Copy the `dev.env.example` file to `dev.env`, and replace
+   `INSERT_YOUR_TOKEN_HERE` with your "Client access token" from DialogFlow.
+
+At this point, your environment should be all set up and ready to go. Proceed
+to the "Running the Project" section and see if your setup is working.
 
 
 #### Method #2: Direct Installation
@@ -115,12 +123,27 @@ Now, open the directory you just downloaded in your terminal application.
   * Docker instructions:
 
 
-### Running the project
-1. In two separate windows, run ./docker-run-server.sh and
+### Running the Project
+1. Open a terminal in the project directory and run `./docker-run-server.sh` and
    ./docker-build-frontend-dev.sh
 1. In your web browser, navigate to http://localhost:8080. You should see a
    greeting from SampleBot.
 
 ### Deploying the Project
 
-
+1. To deploy the project, we first need to create a project with Heroku. If you
+   followed the Docker instructions above, run `./docker-shell.sh` from within
+   the project to get access to the Heroku command-line tool.
+1. Once in the container (you should see `/project $`), run `heroku create`.
+   This will create a new project on Heroku to deploy your application to. Make
+   note of the project name and URL.
+1. Exit the container, then go into the `frontend/src/environments` directory.
+   Copy the `environment.prod.ts.example` file to `environment.prod.ts`, and replace
+   `YOUR_HEROKU_ENDPOINT` with the URL you got from `heroku create`.
+    * This is how we point the frontend to our application running on Heroku.
+1. Copy `dev.env` to `prod.env`, and change line that says
+   `NODE_ENV=development` to `NODE_ENV=production`.
+    * This serves the role of telling the application that it is running on
+      Heroku, and that it should change its behavior.
+1.  Run `./docker-deploy-heroku.sh`. This will build your application for
+    production, push it to Heroku, and then clean up the artifacts.

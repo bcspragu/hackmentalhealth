@@ -1,6 +1,11 @@
 #!/bin/sh
 set -e
 
+if [ -e /project/.netrc ]
+then
+  cp /project/.netrc $HOME/.netrc
+fi
+
 # Go into the frontend directory and build a compiled version of our site.
 cd /project/frontend
 npm run build
