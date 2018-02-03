@@ -133,7 +133,7 @@ necessary software directly onto your computer.
 1. Now you'll need to open up a terminal, navigate to the downloaded project
    code, and run the following commands:
 
-   In Bash:
+   In Bash (Mac/Linux):
     ```bash
     # Install Yarn, which we use to manage our dependencies, and the Heroku
     # CLI, which we'll use to deploy our project.
@@ -153,7 +153,7 @@ necessary software directly onto your computer.
     heroku login
     ```
 
-    In Windows:
+    In Windows Shell:
     ```bat
     :: Install Yarn, which we use to manage our dependencies, and the Heroku
     :: CLI, which we'll use to deploy our project.
@@ -181,15 +181,16 @@ try to run the project and see if your setup is working.
 1. Copy the `dev.env.example` file to `dev.env`, and replace
    `INSERT_YOUR_TOKEN_HERE` with your "Client access token" that you got from
    DialogFlow.
-1. Open a terminal in the project directory. If you're using Docker, run
-   `./docker-run-server.sh`. If not, run `yarn exec nodemon index.js`.
+1. Open a terminal in the project directory.
+    * If you're using Docker, run: `./docker-run-server.sh`
+    * If not, run: `yarn exec nodemon index.js`
     * This will run the backend server, which handles talking to DialogFlow for
       getting chatbot responses. It also handles the real-time communication
       with the browser via WebSockets. Additionally, it will restart the server
       every time it detects changes to server files.
-1. Open another terminal in the project directory. If you're using Docker, run
-   `./docker-build-frontend-dev.sh`. If not, run `yarn exec ng build --
-   --watch`.
+1. Open another terminal in the project directory.
+    * If you're using Docker, run `./docker-build-frontend-dev.sh`
+    * If not, run `yarn exec ng build -- --watch`
     * This will build static HTML, CSS, and JavaScript files from the `src/`
       directory, and place them into the `dist/` directory. It will also watch
       for changes to the files and rebuild the files when it detects changes.
