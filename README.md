@@ -119,26 +119,77 @@ check in with me before the workshops the day of.
       the frontend and backend dependencies, and logs you into your new Heroku
       account.
 1. Enter your Heroku credentials when prompted.
-1. Copy the `dev.env.example` file to `dev.env`, and replace
-   `INSERT_YOUR_TOKEN_HERE` with your "Client access token" from DialogFlow.
-
-At this point, your environment should be all set up and ready to go. Proceed
-to the "Running the Project" section and see if your setup is working.
 
 
 #### Method #2: Direct Installation
 
-TODO(bcspragu): Complete this section, include instructions for installing
-NodeJS/NPM, Yarn, Git, and the Heroku command-line tool.
+Instead of running everything in a Docker container, you can install all of the
+necessary software directly onto your computer.
+
+1. The main piece of software you'll need is NodeJS, you can find installers
+   for all major platforms [here](https://nodejs.org/en/download/). NodeJS
+   comes with [NPM](https://www.npmjs.com/), the system for managing packages
+   and libraries in JavaScript.
+1. Now you'll need to open up a terminal, navigate to the downloaded project
+   code, and run the following commands:
+
+   In Bash:
+    ```bash
+    # Install Yarn, which we use to manage our dependencies, and the Heroku
+    # CLI, which we'll use to deploy our project.
+    npm install --global yarn heroku-cli
+
+    # Install our backend dependencies.
+    yarn
+
+    # Go into our frontend directory.
+    cd frontend
+    # Install our frontend dependencies.
+    npm install
+
+    # Go back to the project directory.
+    cd ..
+    # Log in to Heroku.
+    heroku login
+    ```
+
+    In Windows:
+    ```bat
+    :: Install Yarn, which we use to manage our dependencies, and the Heroku
+    :: CLI, which we'll use to deploy our project.
+    npm install --global yarn heroku-cli
+
+    :: Install our backend dependencies.
+    yarn
+
+    :: Go into our frontend directory.
+    cd frontend
+    :: Install our frontend dependencies.
+    npm install
+
+    :: Go back to the project directory.
+    cd..
+    :: Log in to Heroku.
+    heroku login
+    ```
 
 ### Running the Project
-1. Open a terminal in the project directory and run `./docker-run-server.sh`
+
+At this point, your environment should be all set up and ready to go. Now we'll
+try to run the project and see if your setup is working.
+
+1. Copy the `dev.env.example` file to `dev.env`, and replace
+   `INSERT_YOUR_TOKEN_HERE` with your "Client access token" that you got from
+   DialogFlow.
+1. Open a terminal in the project directory. If you're using Docker, run
+   `./docker-run-server.sh`. If not, run `yarn exec nodemon index.js`.
     * This will run the backend server, which handles talking to DialogFlow for
       getting chatbot responses. It also handles the real-time communication
       with the browser via WebSockets. Additionally, it will restart the server
       every time it detects changes to server files.
-1. Open another terminal in the project directory and run
-   `./docker-build-frontend-dev.sh`
+1. Open another terminal in the project directory. If you're using Docker, run
+   `./docker-build-frontend-dev.sh`. If not, run `yarn exec ng build --
+   --watch`.
     * This will build static HTML, CSS, and JavaScript files from the `src/`
       directory, and place them into the `dist/` directory. It will also watch
       for changes to the files and rebuild the files when it detects changes.
@@ -147,6 +198,9 @@ NodeJS/NPM, Yarn, Git, and the Heroku command-line tool.
    he responds.
 
 ### Deploying the Project
+
+This isn't part of the pre-work, but you're welcome to do it beforehand if you
+like!
 
 1. To deploy the project, we first need to create a project with Heroku. If you
    followed the Docker instructions above, run `./docker-shell.sh` from within
