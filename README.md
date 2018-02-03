@@ -190,7 +190,7 @@ try to run the project and see if your setup is working.
       every time it detects changes to server files.
 1. Open another terminal in the project directory.
     * If you're using Docker, run `./docker-build-frontend-dev.sh`
-    * If not, run `yarn exec ng build -- --watch`
+    * If not, run `npm run ng build -- --watch`
     * This will build static HTML, CSS, and JavaScript files from the `src/`
       directory, and place them into the `dist/` directory. It will also watch
       for changes to the files and rebuild the files when it detects changes.
