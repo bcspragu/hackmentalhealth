@@ -1,0 +1,373 @@
+[
+  {
+    "id": "62ebb4b2-c510-44a5-9a18-3151465df087",
+    "data": [
+      {
+        "text": "Flip",
+        "alias": "modifier",
+        "meta": "@modifiers",
+        "userDefined": false
+      },
+      {
+        "text": " the word ",
+        "userDefined": false
+      },
+      {
+        "text": "muffins",
+        "alias": "word",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 1
+  },
+  {
+    "id": "2801d2d4-2fa4-45c3-9f4a-e94548f11ef2",
+    "data": [
+      {
+        "text": "Do something to ",
+        "userDefined": false
+      },
+      {
+        "text": "horses",
+        "alias": "word",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "76220359-ee6c-47ac-90f5-93ef509d58ff",
+    "data": [
+      {
+        "text": "Use the word ",
+        "userDefined": false
+      },
+      {
+        "text": "irrelevant",
+        "alias": "word",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "784a5680-32be-4be5-a07d-e690f8955f0e",
+    "data": [
+      {
+        "text": "Take the word \"",
+        "userDefined": false
+      },
+      {
+        "text": "excellent",
+        "alias": "word",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": "\" and ",
+        "userDefined": false
+      },
+      {
+        "text": "flip",
+        "alias": "modifier",
+        "meta": "@modifiers",
+        "userDefined": false
+      },
+      {
+        "text": " it",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "9298a90d-ce49-45e7-b841-7c954f7501be",
+    "data": [
+      {
+        "text": "Reverse",
+        "alias": "modifier",
+        "meta": "@modifiers",
+        "userDefined": false
+      },
+      {
+        "text": " the ",
+        "userDefined": false
+      },
+      {
+        "text": "word",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "spooky",
+        "alias": "word",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "ad6349e6-9842-4106-8119-bfc153df5da6",
+    "data": [
+      {
+        "text": "Scream",
+        "alias": "modifier",
+        "meta": "@modifiers",
+        "userDefined": false
+      },
+      {
+        "text": " it loud",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "2c761978-4a22-4ce8-b19c-74ec6f03a79a",
+    "data": [
+      {
+        "text": "Flip",
+        "alias": "modifier",
+        "meta": "@modifiers",
+        "userDefined": false
+      },
+      {
+        "text": " it",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "f489805a-4030-49a3-b4f8-ac461786fc61",
+    "data": [
+      {
+        "text": "Modify ",
+        "userDefined": false
+      },
+      {
+        "text": "water bottle",
+        "alias": "word",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "d5c7267a-e508-4dfd-8a4b-42500f8f1115",
+    "data": [
+      {
+        "text": "Change ",
+        "userDefined": false
+      },
+      {
+        "text": "racecar",
+        "alias": "word",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "d0cdcf85-04c7-4de3-b59d-a3ac8a80d347",
+    "data": [
+      {
+        "text": "Flip",
+        "alias": "modifier",
+        "meta": "@modifiers",
+        "userDefined": false
+      },
+      {
+        "text": " it around",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "09c220c2-e171-4a03-b059-11af7769c144",
+    "data": [
+      {
+        "text": "Say it ",
+        "userDefined": false
+      },
+      {
+        "text": "in reverse",
+        "alias": "modifier",
+        "meta": "@modifiers",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "373cf5b3-bd60-48fa-a5fa-0d69ddb318fc",
+    "data": [
+      {
+        "text": "Say it ",
+        "userDefined": false
+      },
+      {
+        "text": "backwards",
+        "alias": "modifier",
+        "meta": "@modifiers",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "1bb71971-f20b-49a0-bba5-c4e3d9ea5eaa",
+    "data": [
+      {
+        "text": "Apply ",
+        "userDefined": false
+      },
+      {
+        "text": "rot13",
+        "alias": "modifier",
+        "meta": "@modifiers",
+        "userDefined": false
+      },
+      {
+        "text": " to ",
+        "userDefined": false
+      },
+      {
+        "text": "helicopter",
+        "alias": "word",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "dd4e0d0a-d76d-455e-b0c0-7a43d673bddc",
+    "data": [
+      {
+        "text": "What is \"",
+        "userDefined": false
+      },
+      {
+        "text": "rotation",
+        "alias": "word",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": "\" in ",
+        "userDefined": false
+      },
+      {
+        "text": "reverse",
+        "alias": "modifier",
+        "meta": "@modifiers",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "f52b8fe4-6c92-45a3-922f-13eff6771ff9",
+    "data": [
+      {
+        "text": "Say ",
+        "userDefined": false
+      },
+      {
+        "text": "dogs",
+        "alias": "word",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " in ",
+        "userDefined": false
+      },
+      {
+        "text": "all caps",
+        "alias": "modifier",
+        "meta": "@modifiers",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "f506ca06-b270-4f8c-aff4-2af46dbbee93",
+    "data": [
+      {
+        "text": "Yell",
+        "alias": "modifier",
+        "meta": "@modifiers",
+        "userDefined": false
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "cookies",
+        "alias": "word",
+        "meta": "@sys.any",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0
+  },
+  {
+    "id": "34d2ee29-7280-4121-8e5b-98698c92724d",
+    "data": [
+      {
+        "text": "Spell ",
+        "userDefined": false
+      },
+      {
+        "text": "muffins",
+        "alias": "word",
+        "meta": "@sys.any",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "backwards",
+        "alias": "modifier",
+        "meta": "@modifiers",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1517536263
+  }
+]

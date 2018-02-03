@@ -1,0 +1,45 @@
+[
+  {
+    "value": "reverse",
+    "synonyms": [
+      "backwards",
+      "backward",
+      "reverse",
+      "reversed",
+      "in reverse",
+      "flip",
+      "flip around"
+    ]
+  },
+  {
+    "value": "rot13",
+    "synonyms": [
+      "rot13",
+      "rotate by 13"
+    ]
+  },
+  {
+    "value": "capitalize",
+    "synonyms": [
+      "capitalize",
+      "caps",
+      "capslock",
+      "uppercase",
+      "allcaps",
+      "yell",
+      "scream",
+      "all caps"
+    ]
+  },
+  {
+    "value": "lowercase",
+    "synonyms": [
+      "lowercase",
+      "downcase",
+      "smallcase",
+      "nocaps",
+      "quiet",
+      "whisper"
+    ]
+  }
+]

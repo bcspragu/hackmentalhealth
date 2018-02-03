@@ -1,0 +1,74 @@
+{
+  "id": "85c0f313-cad0-428e-9245-72d35cc02bd1",
+  "name": "Modify a word",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "modify-word",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "3d0118b2-87a8-4416-928e-86083b1ab337",
+          "required": true,
+          "dataType": "@sys.any",
+          "name": "word",
+          "value": "$word",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Sure, what should I $modifier?"
+            },
+            {
+              "lang": "en",
+              "value": "What word should I modify?"
+            },
+            {
+              "lang": "en",
+              "value": "I can do that, with what word?"
+            }
+          ],
+          "isList": false
+        },
+        {
+          "id": "8e6785d0-8851-4028-8cd5-b1c0b0c2c6ea",
+          "required": true,
+          "dataType": "@modifiers",
+          "name": "modifier",
+          "value": "$modifier",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "What should I do to \"$word\"?"
+            },
+            {
+              "lang": "en",
+              "value": "How should I modify it?"
+            },
+            {
+              "lang": "en",
+              "value": "How should I change it?"
+            }
+          ],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1517536263,
+  "fallbackIntent": false,
+  "events": []
+}
