@@ -196,7 +196,7 @@ try to run the project and see if your setup is working.
       for changes to the files and rebuild the files when it detects changes.
 1. Once both commands are running, navigate to http://localhost:8080 in your
    web browser. You should see a greeting from SampleBot. Say "Hi!" and see how
-   he responds.
+   they respond.
 
 ### Deploying the Project
 
